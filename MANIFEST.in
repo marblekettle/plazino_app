@@ -1,0 +1,3 @@
+graft plazino/static
+graft plazino/templates
+global-excluse *.pyc
