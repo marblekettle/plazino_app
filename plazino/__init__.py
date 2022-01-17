@@ -13,7 +13,7 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     if test_config is not None:
         app.config.from_mapping(test_config)
-    elif path.isfile(path.join(app.instance_path(), 'config.json')):
+    elif path.isfile(path.join(app.instance_path, 'config.json')):
         app.config.from_file('config.json', load=json.load)
     else:
         app.config.from_mapping({

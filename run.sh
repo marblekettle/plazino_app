@@ -1,5 +1,5 @@
 VENV_DIR=venv
-FLASK_APP=flaskapp
+FLASK_APP=plazino
 HOST_IP=0.0.0.0
 PORT_NR=8080
 

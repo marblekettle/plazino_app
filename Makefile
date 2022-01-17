@@ -1,11 +1,11 @@
-NAME=plazino
+NAME=Plazino
 DIR=venv
 
 $(NAME): $(DIR)
 	echo "Type \"bash run.sh\" to start."
 
 $(DIR):
-	python -3 -m venv $(DIR)
+	python3 -m venv $(DIR)
 	. $(DIR)/bin/activate && \
 	pip install -e . && \
 	pip list
